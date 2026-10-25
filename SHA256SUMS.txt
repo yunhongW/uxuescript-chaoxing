@@ -1,3 +1,3 @@
-98bc51f6ec2bb2641e006ae94fb582fa0ba9c1cb349dd2d8bfb781abc5882d01  dist/uXueScript_2.4.1_quiz-fix4_x64-setup.exe
-704a174f1ec56b66b2682c7f8311069bd68c0024565ad640ae1b8227a37897d5  dist/uxs-2.4.1-quiz-fix4-win-x64.exe
-0db290dd8f9376834c1870ad2632f3ede64e0937e22d94cc0ef43321f5aa452f  dist/uxuescript-2.4.1-quiz-fix4-source.zip
+1a79b6e633a7d6c0b44475dceff3d3d08a1fa37048b643e8299b2a96183b29c1  dist/uXueScript_2.4.1_quiz-fix5_x64-setup.exe
+f66d6996eef4fcee57a8d95c1584dffdba1e64630daa8d07273d864ba63939f4  dist/uxs-2.4.1-quiz-fix5-win-x64.exe
+7e97a956551bada9a78f3b4e2dbf80363306244486bbc081c5d55ceb38e1a73c  dist/uxuescript-2.4.1-quiz-fix5-source.zip

@@ -9,9 +9,9 @@
 
 | 文件 | 说明 |
 | --- | --- |
-| `dist/uXueScript_2.4.1_quiz-fix4_x64-setup.exe` | Windows x64 安装包（推荐） |
-| `dist/uxs-2.4.1-quiz-fix4-win-x64.exe` | 免安装绿色版 |
-| `dist/uxuescript-2.4.1-quiz-fix4-source.zip` | 修改版完整源码（GPL-3.0 要求） |
+| `dist/uXueScript_2.4.1_quiz-fix5_x64-setup.exe` | Windows x64 安装包（推荐） |
+| `dist/uxs-2.4.1-quiz-fix5-win-x64.exe` | 免安装绿色版 |
+| `dist/uxuescript-2.4.1-quiz-fix5-source.zip` | 修改版完整源码（GPL-3.0 要求） |
 
 校验值见 `SHA256SUMS.txt`。
 
@@ -30,6 +30,12 @@
    - 标题允许加粗或 `#` 前缀；解析段兼容“解析 / 说明 / 分析”；忽略 `---`、`***` 分隔线
    - 模型把 JSON 字符串结尾写成中文引号导致不闭合时，按行补齐后重新解析
 4. 任务点出错时保留首个错误并在本轮结束后停止自动重试，不再重复请求同一测验
+5. 答案解析宽严校准（fix5，依据后期测试的复现用例）
+   - 纯文本答案里的引用编号（如 `[3]`）不再被误判成 JSON 而整题失败
+   - 简答题回答允许以“解析:”“说明:”等标签开头
+   - 支持“题号 / 答案 / 解析”三列 Markdown 表格，第三列当说明忽略
+   - 判断题的括号说明（如 `1. A（蓝光散射更强）`）按解释接受，仅在指向其他选项时才拒绝
+   - 真正的 JSON 残片、答案数量不符、题号未知或重复、非法选项仍全部拒绝
 
 ## 使用
 
@@ -45,7 +51,7 @@
 - 上游项目：[unraous/uxuescript](https://github.com/unraous/uxuescript) v2.4.1，作者 unraous
 - 许可证：GNU General Public License v3.0，见 [`LICENSE`](LICENSE)
 - 本修改版同样以 GPL-3.0 发布，完整源码随 `dist/` 中的 source 包提供
-- 修改日期：2026-10-24
+- 修改日期：2026-10-25（quiz-fix5）
 
 ## 免责声明
 
